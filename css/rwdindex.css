@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px) {
+
+    .article2 li { height:220px; 
+        float:left; width:49%; margin-right:2%;
+        margin-bottom:20px;
+        color:#fff;
+        position:relative; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover; opacity:1; 
+        transition:all 1s;
+    }
+
+
+.article2 li:nth-child(1) { background-image:url(../img/what1.jpg);  }
+.article2 li:nth-child(2) { background-image:url(../img/what2.jpg);  margin-right:0}
+.article2 li:nth-child(3) { background-image:url(../img/what3.jpg);  }
+.article2 li:nth-child(4) { background-image:url(../img/what4.jpg); margin-right:0 }
+
+.article2 li > div { position:absolute; 
+    bottom:25px; left:25px; 
+    right:25px; transition:all 0.4s;
+    text-align:center; 
+}
+.article2 li:hover > div { bottom:50px;  }
+
+.article2 li > div > a {  display: inline-block; padding: 10px 20px;
+    border: 1px solid rgba(255,255,255,0.5); font-size: 11px; font-weight: 600 !important;
+    margin-top:30px; 
+}
+
+.article2 li > div > p { display:none; }
+
+/* article4 구역 */
+.article4 li {
+    float:left; width:49%;
+    margin-right:2%;
+    margin-bottom:20px; 
+    border:1px solid #999;
+    text-align:center;
+    opacity:1; 
+}
+.article4 li:nth-child(3),
+.article4 li:nth-child(5) {
+    clear:both
+}
+.article4 li:nth-child(4) {
+    clear:none
+}
+.article4 li:nth-child(2),
+.article4 li:nth-child(4),
+.article4 li:nth-child(6) {
+    margin-right:0; 
+}
+.article4 li:nth-child(3) {
+    margin-right:2%; 
+}
+
+/* article5 구역 */
+.article5 .row > div { width:100%; float:left; }
+.article5 .row > div.cs_board { padding-right:0px; }
+.article5 .row > div.cs_center { 
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd; 
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:30px 0px; 
+    text-align:center;
+    margin:30px 0; 
+}
+.article5 .cs_center li::before {
+    display:none 
+}
+.article5 .row div.cs_movie { padding-left:0px;
+    text-align:center; }
+.article5 .row div.cs_movie img {
+    width:80%; 
+}
+
+
+
+}
